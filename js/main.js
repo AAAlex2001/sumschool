@@ -8,3 +8,4 @@ async function loadComponent(selector, path) {
 }
 
 loadComponent('#header-root', 'header.html');
+loadComponent('#hero-root', 'hero.html');

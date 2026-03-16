@@ -1,9 +1,13 @@
 html {
     margin: 0;
     padding: 0px 4px;
-    background-color: #EEFFF9;
+    background-color: #27509B;
 }
 
+body {
+    margin: 0;
+    padding: 0;
+}
 
 @media (min-width: 1400px) {
     html {
