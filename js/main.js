@@ -46,7 +46,7 @@ function initHeroSlider() {
         renderMode: 'performance',
         slides: {
             perView: 1,
-            spacing: 0,
+            spacing: 2,
         },
         created(slider) {
             bindHeroDots(slider);

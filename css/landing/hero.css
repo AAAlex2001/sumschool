@@ -150,6 +150,15 @@
     letter-spacing: 1%;
 }
 
+.hero-button-outline:hover {
+    color: #9FC1FF;
+    border-color: #9FC1FF;
+}
+
+.hero-button-filled:hover {
+    color: #27509B;
+}
+
 @media (min-width: 500px) {
 
     .content-text h1 {
