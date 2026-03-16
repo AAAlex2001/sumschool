@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 20px;
     justify-content: space-between;
 }
 
@@ -19,10 +18,6 @@
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0%;
-}
-
-.nav-links a:hover {
-    color: #002244;
 }
 
 .languages {
@@ -49,14 +44,10 @@
     color: #003366;
 }
 
-.languages button:hover {
-    color: #204b76;
-}
-
 .header-button {
-    background-color: #003366;
+    background-color: #27509B;
     color: white;
-    border: 1px solid #003366;
+    border: 1px solid #27509B;
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
