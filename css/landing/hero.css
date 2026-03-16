@@ -167,6 +167,14 @@
     
 }
 
+@media (min-width: 770px) {
+    
+    .hero-container {
+        padding: 48px 16px;
+    }
+    
+}
+
 @media (min-width: 1024px) {
 
     .hero-container {
@@ -211,7 +219,7 @@
     }
 
     .content-text h1 {
-        font-size: 64px;
+        font-size: 56px;
     }
 
     .content-text p {
