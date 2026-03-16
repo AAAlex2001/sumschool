@@ -45,10 +45,10 @@
 .content {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: flex-start;
     width: 100%;
-    justify-content: space-between;
+    gap: 32px;
 }
 
 .content-main {
@@ -103,7 +103,8 @@
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    width: 100%;
+    width: auto;
+    margin-top: auto;
 }
 
 .hero-pagination-dot {
@@ -168,15 +169,16 @@
     }
 
     .videopreview {
-        width: 50%;
+        flex: 1 1 0;
         order: 1;
+        min-width: 0;
     }
 
     .content {
-        width: 50%;
+        flex: 1 1 0;
         order: 0;
         align-self: stretch;
-        min-height: 100%;
+        min-width: 0;
     }
 
     .content-main {
