@@ -10,9 +10,16 @@ body {
     padding: 0;
 }
 
+@media (min-width: 770px) {
+    html {
+        gap: 120px;
+    }
+}
+
 @media (min-width: 1400px) {
     html {
         padding: 0px 32px;
+        gap: 140px;
     }
 }
 
