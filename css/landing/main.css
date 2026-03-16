@@ -1,4 +1,18 @@
 html {
     margin: 0;
-    padding: 20px;
+    padding: 0px 4px;
+    background-color: #EEFFF9;
+}
+
+
+@media (min-width: 1400px) {
+    html {
+        padding: 0px 32px;
+    }
+}
+
+@media (min-width: 1920px) {
+    html {
+        padding: 0px 48px;
+    }
 }
