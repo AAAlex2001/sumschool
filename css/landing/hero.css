@@ -1,3 +1,16 @@
+.hero-slider-wrapper {
+    width: 100%;
+}
+
+#hero-slider {
+    width: 100%;
+}
+
+.hero-slide {
+    min-width: 100%;
+    max-width: 100%;
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -32,7 +45,18 @@
 .content {
     display: flex;
     flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.content-main {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     gap: 24px;
+    width: 100%;
 }
 
 .content-text {
@@ -71,6 +95,30 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    flex-wrap: wrap;
+}
+
+.hero-pagination {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 8px;
+    width: 100%;
+}
+
+.hero-pagination-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 999px;
+    border: 1px solid #27509B;
+    background: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.hero-pagination-dot.is-active {
+    background: #FFFFFF;
+    opacity: 1;
 }
 
 .hero-button-filled {
@@ -109,18 +157,11 @@
     
 }
 
-@media (min-width: 770px) {
-
-    .content {
-        gap: 16px;
-    }
-    
-}
-
 @media (min-width: 1024px) {
 
     .hero-container {
         flex-direction: row;
+        align-items: stretch;
         text-align: left;
         padding: 80px 24px;
         gap: 8px;
@@ -134,7 +175,16 @@
     .content {
         width: 50%;
         order: 0;
-        align-self: flex-start;
+        align-self: stretch;
+        min-height: 100%;
+    }
+
+    .content-main {
+        gap: 16px;
+    }
+
+    .content-text {
+        gap: 16px;
     }
 
     .content-text h1 {
@@ -149,16 +199,19 @@
         gap: 24px;
     }
 
-    .content-text {
+    .content-text h1 {
+        font-size: 64px;
+    }
+
+    .content-text p {
+        font-size: 24px;
+    }
+
+    .content-main {
         gap: 24px;
     }
 
-    .content-text h1 {
-        font-size: 56px;
-    }
-
-    .content p {
-        font-size: 24px;
+    .content-text {
         gap: 24px;
     }
 }
@@ -171,7 +224,7 @@
         border-radius: 32px;
     }
 
-    .content {
+    .content-main {
         gap: 48px;
     }
 }

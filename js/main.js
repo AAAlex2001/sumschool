@@ -7,5 +7,61 @@ async function loadComponent(selector, path) {
     el.innerHTML = doc.body.innerHTML;
 }
 
-loadComponent('#header-root', 'header.html');
-loadComponent('#hero-root', 'hero.html');
+function updateHeroDots(slider) {
+    const currentIndex = slider.track.details.rel;
+    const paginations = document.querySelectorAll('.hero-pagination');
+
+    paginations.forEach((pagination) => {
+        const dots = pagination.querySelectorAll('.hero-pagination-dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('is-active', index === currentIndex);
+            dot.setAttribute('aria-current', index === currentIndex ? 'true' : 'false');
+        });
+    });
+}
+
+function bindHeroDots(slider) {
+    const paginations = document.querySelectorAll('.hero-pagination');
+
+    paginations.forEach((pagination) => {
+        const dots = pagination.querySelectorAll('.hero-pagination-dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slider.moveToIdx(index);
+            });
+        });
+    });
+}
+
+function initHeroSlider() {
+    const sliderElement = document.querySelector('#hero-slider');
+    if (!sliderElement || typeof KeenSlider === 'undefined') {
+        return;
+    }
+
+    new KeenSlider(sliderElement, {
+        loop: true,
+        rubberband: false,
+        mode: 'snap',
+        renderMode: 'performance',
+        slides: {
+            perView: 1,
+            spacing: 0,
+        },
+        created(slider) {
+            bindHeroDots(slider);
+            updateHeroDots(slider);
+        },
+        slideChanged(slider) {
+            updateHeroDots(slider);
+        },
+    });
+}
+
+async function initPage() {
+    await loadComponent('#header-root', 'header.html');
+    await loadComponent('#hero-root', 'hero.html');
+    initHeroSlider();
+}
+
+initPage();
