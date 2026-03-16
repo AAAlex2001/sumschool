@@ -86,6 +86,21 @@
     letter-spacing: 1%;
 }
 
+.stats-button-outline img {
+    margin-left: 8px;
+    align-self: center;
+}
+
+.stats-button-filled:hover {
+    background-color: #376BCA;
+    border-color: #376BCA;
+}
+
+.stats-button-outline:hover {
+    color: #376BCA;
+    border-color: #376BCA;
+}
+
 .stats {
     display: flex;
     flex-direction: column;
