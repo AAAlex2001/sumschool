@@ -8,8 +8,10 @@
     border-bottom-left-radius: 16px;
     border-bottom-right-radius: 16px;
     padding: 12px;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 100;
     box-shadow: 1px 1px 1px 0px #D9EDE6;
 
@@ -96,16 +98,12 @@
     .header-container {
         border-bottom-left-radius: 32px;
         border-bottom-right-radius: 32px;
-        margin-left: -32px;
-        margin-right: -32px;
         padding: 24px 32px;
     }
 }
 
 @media (min-width: 1920px) {
     .header-container {
-        margin-left: -48px;
-        margin-right: -48px;
         padding: 24px 48px;
     }
 }

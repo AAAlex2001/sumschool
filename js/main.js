@@ -63,6 +63,7 @@ async function initPage() {
     await loadComponent('#hero-root', 'hero.html');
     await loadComponent('#stats-root', 'stats.html');
     await loadComponent('#news-root', 'news.html');
+    await loadComponent('#programs-root', 'programs.html');
     initHeroSlider();
 }
 
