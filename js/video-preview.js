@@ -1,6 +1,5 @@
 Init();
-
-async function Init() {
+function Init() {
     const videopreviews = document.querySelectorAll('.videopreview');
     videopreviews.forEach(videopreview => {
         const video = videopreview.querySelector('video');

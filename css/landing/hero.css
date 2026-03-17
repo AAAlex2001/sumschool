@@ -216,6 +216,7 @@
     .hero-container {
         padding: 80px 48px;
         gap: 24px;
+        border-radius: 32px;
     }
 
     .content-text h1 {
@@ -240,7 +241,6 @@
     .hero-container {
         padding: 96px 64px;
         gap: 16px;
-        border-radius: 32px;
     }
 
     .content-main {

@@ -187,6 +187,7 @@
     
     .container-stats {
         padding: 80px 48px;
+        border-radius: 32px;
     }
 
     .stats-text h1 {

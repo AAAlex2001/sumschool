@@ -161,6 +161,7 @@
 
     .container-programs {
         padding: 80px 48px;
+        border-radius: 32px;
     }
 
     .programs-title {

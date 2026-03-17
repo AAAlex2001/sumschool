@@ -1,0 +1,74 @@
+.container-university {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.university-title {
+    font-size: 32px;
+    color: #27509B;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+    margin-left: 8px;
+}
+
+.university-container {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    background: #BAE4D7;
+    border-radius: 16px;
+    padding: 32px 12px;
+}
+
+.university-card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    padding: 32px 16px;
+}
+
+.university-card img {
+    width: 100%;
+    max-width: 200px;
+    height: 142px;
+    object-fit: cover;
+    align-self: center;
+}
+
+.university-info {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    align-items: center;
+}
+
+.university-name {
+    color: #003366;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin: 0;
+    text-align: center;
+}
+
+.university-country {
+    color: #686868;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    margin: 0;
+    text-align: center;
+}
