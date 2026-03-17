@@ -27,6 +27,24 @@
     padding: 32px 12px;
 }
 
+.university-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.university-section-title {
+    font-size: 18px;
+    color: #27509B;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 1%;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
+
 .university-card {
     display: flex;
     flex-direction: column;
@@ -39,8 +57,8 @@
 .university-card img {
     width: 100%;
     max-width: 200px;
-    height: 142px;
-    object-fit: cover;
+    height: 145px;
+    object-fit: contain;
     align-self: center;
 }
 
