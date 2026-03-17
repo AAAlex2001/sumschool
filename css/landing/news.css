@@ -1,0 +1,142 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    padding: 0 12px;
+}
+
+.news-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 24px;
+    width: 100%;
+}
+
+.news-card {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover
+}
+
+.news-text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news-date {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #555555;
+    margin: 0;
+    text-align: left;
+}
+
+.news-description {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.news-button {
+    background-color: #27509B;
+    color: white;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    max-width: 166px;
+}
+
+.news-button:hover {
+    background-color: #376BCA;
+    border-color: #376BCA;
+}
+
+@media (min-width: 500px) {
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 24px 8px;
+    }
+    
+}
+
+@media (min-width: 770px) {
+
+    .news {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 16px 8px;
+    }
+
+    .container {
+        padding: 0 16px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .news {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+    }
+
+    .container {
+        padding: 0 24px;
+    }
+    
+}
+
+
+@media (min-width: 1400px) {
+
+    .container {
+        padding: 0 48px;
+    }
+    
+}
+
+
+@media (min-width: 1920px) {
+
+    .container {
+        padding: 0 64px;
+    }
+    
+}
