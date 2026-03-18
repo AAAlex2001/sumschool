@@ -65,6 +65,7 @@ async function initPage() {
     await loadComponent('#news-root', 'news.html');
     await loadComponent('#programs-root', 'programs.html');
     await loadComponent('#university-root', 'university.html');
+    await loadComponent('#reviews-root', 'reviews.html');
     initHeroSlider();
 }
 
