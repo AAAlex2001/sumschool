@@ -85,6 +85,12 @@
     box-sizing: border-box;
 }
 
+.review-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
 .review-media {
     display: flex;
     flex-direction: column;
@@ -105,6 +111,7 @@
     margin: 0;
     color: #003366;
     text-align: left;
+    cursor: pointer;
 }
 
 .subject-university:hover {
@@ -223,7 +230,7 @@
     .reviews-buttons {
         display: flex;
         flex-direction: row;
-        gap: 16px;
+        gap: 32px;
         justify-content: flex-start;
         align-items: start;
     }
@@ -253,6 +260,46 @@
 
     .reviews-fullcontainer {
         flex-direction: row;
+        align-items: stretch;
+        gap: 32px;
+    }
+    .reviews-title {
+        font-size: 48px;
+    }
+
+    .reviews-container {
+        padding: 80px 48px;
+    }
+
+    .review-media {
+        order: 1;
+        flex: 1 1 50%;
+        margin-top: 0;
+        min-width: 0;
+    }
+
+    .review-content {
+        order: 2;
+        flex: 1 1 50%;
+        min-width: 0;
+        justify-content: flex-start;
+    }
+
+    .review-photo {
+        width: 100%;
+        height: 100%;
+        margin-top: 0;
+    }
+}
+
+@media (min-width: 1920px) {
+
+    .reviews-container {
+        padding: 96px 64px;
+    }
+
+    .review p {
+        font-size: 20px;
     }
     
 }
