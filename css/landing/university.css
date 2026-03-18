@@ -218,7 +218,7 @@
         border-radius: 32px;
     }
     .university-cards {
-        gap: 8px 16px;
+        gap: 16px;
         grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
     }
     .university-container {
