@@ -114,8 +114,6 @@
     background: #FFFFFF;
     border-radius: 100px;
     border: none;
-    flex: none;
-    flex-grow: 0;
     cursor: pointer;
 }
 
@@ -127,14 +125,7 @@
 .partners-arrow-icon {
     width: 16px;
     height: 16px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     display: block;
-}
-
-.partners-arrow-icon:hover {
-    filter: brightness(1.2);
 }
 
 .partners-arrow-prev .partners-arrow-icon {
@@ -174,7 +165,7 @@
     }
 
     .container-partners::before {
-        background-size: 50% auto;
+        background-size: 55% auto;
     }
 
     .partners-title {
