@@ -1,0 +1,214 @@
+.container-footer {
+    display: flex;
+    flex-direction: column;
+    background: #FFFFFF;
+    border-top-left-radius: 16px;
+    border-top-right-radius: 16px;
+    padding: 32px 12px 0 12px;
+    gap: 32px;
+}
+
+.footer-logos {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    max-width: 240px;
+}
+
+.contacts {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.contacts-main-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.contacts-face {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.contacts-name {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.contacts-position {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    color: #000000;
+    margin: 0;
+    text-align: left;
+}
+
+.contacts-info {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.contacts-text {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contacts-button {
+    background-color: #27509B;
+    color: white;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    align-self: flex-start;
+}
+
+.contacts-button:hover {
+    background-color: #376BCA;
+    border-color: #376BCA;
+}
+
+.contacts-info-phone {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.contacts-phone {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: #27509B;
+    text-align: left;
+    text-decoration: none;
+}
+
+.contacts-info-email {
+    display: flex;
+    flex-direction: row;
+    gap: 4px;
+    align-items: center;
+}
+
+.contacts-email {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: #27509B;
+    text-align: left;
+    text-decoration: none;
+}
+
+.footer-links-main {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.footer-links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-links a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    margin: 0;
+    color: #27509B;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer-links-button {
+    background-color: transparent;
+    color: #27509B;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    align-self: flex-start;
+}
+
+.footer-links-button:hover {
+    color: #376BCA;
+    border-color: #376BCA;
+}
+
+.footer-bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
+.footer-bottom-link {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+
+.footer-bottom-copy {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 1%;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+}
