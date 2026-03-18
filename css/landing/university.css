@@ -21,16 +21,47 @@
 .university-container {
     display: flex;
     flex-direction: column;
-    gap: 16px;
     background: #BAE4D7;
     border-radius: 16px;
     padding: 32px 12px;
+}
+
+.university-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.35s ease;
+}
+
+.university-cards .university-card:first-child {
+    margin-top: 16px;
+}
+
+.university-cards.expanded {
+    max-height: 10000px;
 }
 
 .university-header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    cursor: pointer;
+}
+
+.university-header:hover .university-section-title {
+    color: #003366;
+}
+
+.university-plus {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.university-header[aria-expanded="true"] .university-plus {
+    transform: rotate(45deg);
 }
 
 .university-section-title {
@@ -89,4 +120,40 @@
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
+}
+
+.university-toggle-button {
+    background-color: transparent;
+    color: #27509B;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    align-self: flex-start;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+}
+
+.university-cards.expanded .university-toggle-button {
+    opacity: 1;
+    pointer-events: auto;
+    transition: opacity 0.3s ease 0.35s, color 0.2s ease, border-color 0.2s ease;
+}
+
+.university-toggle-button:hover {
+    color: #376BCA;
+    border-color: #376BCA;
+}
+
+.minus-icon {
+    display: block;
 }
