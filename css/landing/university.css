@@ -227,6 +227,9 @@
     .university-title {
         margin-left: 48px;
     }
+    .university-card {
+        gap: 16px;
+    }
 }
 
 @media (min-width: 1920px) {
