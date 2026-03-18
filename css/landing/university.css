@@ -26,24 +26,27 @@
     padding: 32px 12px;
 }
 
-.university-cards {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.university-accordion {
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.35s ease;
 }
 
-.university-cards .university-card:first-child {
-    margin-top: 16px;
-}
-
-.university-cards.expanded {
+.university-accordion.expanded {
     max-height: 10000px;
 }
 
+.university-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding-top: 24px;
+}
+
+
 .university-header {
+    display: flex;
+    flex-direction: row;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -104,7 +107,7 @@
     color: #003366;
     font-family: 'Inter', sans-serif;
     font-weight: 700;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 120%;
     letter-spacing: 0%;
     margin: 0;
@@ -135,15 +138,17 @@
     line-height: 120%;
     letter-spacing: 1%;
     align-self: flex-start;
+    justify-self: start;
     display: inline-flex;
     align-items: center;
     gap: 8px;
     opacity: 0;
     pointer-events: none;
     transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
+    margin-top: 16px;
 }
 
-.university-cards.expanded .university-toggle-button {
+.university-accordion.expanded .university-toggle-button {
     opacity: 1;
     pointer-events: auto;
     transition: opacity 0.3s ease 0.35s, color 0.2s ease, border-color 0.2s ease;
@@ -156,4 +161,86 @@
 
 .minus-icon {
     display: block;
+}
+
+@media (min-width: 500px) {
+    .university-cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        gap: 8px;
+    }
+    
+    .university-toggle-button {
+        grid-column: 1 / -1;
+    }
+
+    .university-name {
+        word-break: break-all;
+    }
+    .university-section-title {
+        font-size: 24px;
+    }
+    .university-card {
+        padding: 24px 12px;
+    }
+}
+
+@media (min-width: 770px) {
+    .university-cards {
+        grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+        gap: 8px;
+    }
+    .university-title {
+        margin-left: 16px;
+    }
+    .university-container {
+        padding: 32px 16px;
+    }
+    .university-card {
+        padding: 32px 24px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .university-title {
+        margin-left: 24px;
+    }
+    .container-university {
+        gap: 32px;
+    }
+    .university-container {
+        padding: 32px 24px;
+    }
+}
+
+@media (min-width: 1400px) {
+    .container-university {
+        border-radius: 32px;
+    }
+    .university-cards {
+        gap: 8px 16px;
+        grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
+    }
+    .university-container {
+        padding: 48px;
+    }
+    .university-title {
+        margin-left: 48px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .university-cards {
+        grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
+    }
+    .university-container {
+        padding: 64px;
+    }
+    .university-title {
+        margin-left: 64px;
+        font-size: 48px;
+    }
+    .university-card {
+        padding: 48px 24px;
+    }
 }

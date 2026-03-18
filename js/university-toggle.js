@@ -1,21 +1,21 @@
 function toggleUniversitySection(headerElement) {
-    const cards = headerElement.nextElementSibling;
-    if (!cards || !cards.classList.contains('university-cards')) return;
-    const isExpanded = cards.classList.toggle('expanded');
+    const accordion = headerElement.nextElementSibling;
+    if (!accordion || !accordion.classList.contains('university-accordion')) return;
+    const isExpanded = accordion.classList.toggle('expanded');
     headerElement.setAttribute('aria-expanded', String(isExpanded));
-    const firstCard = cards.querySelector('.university-card');
+    const firstCard = accordion.querySelector('.university-card');
     if (firstCard) {
         firstCard.setAttribute('tabindex', isExpanded ? '0' : '-1');
     }
 }
 
 function buttonRollUp(button) {
-    const cards = button.closest('.university-cards');
-    if (!cards) return;
+    const accordion = button.closest('.university-accordion');
+    if (!accordion) return;
     
-    cards.classList.remove('expanded');
+    accordion.classList.remove('expanded');
     
-    const header = cards.previousElementSibling;
+    const header = accordion.previousElementSibling;
     if (header && header.classList.contains('university-header')) {
         header.setAttribute('aria-expanded', 'false');
     }
@@ -27,12 +27,12 @@ document.addEventListener('DOMContentLoaded', function() {
     if (!firstContainer) return;
 
     const header = firstContainer.querySelector('.university-header');
-    const cards = firstContainer.querySelector('.university-cards');
+    const accordion = firstContainer.querySelector('.university-accordion');
 
-    if (header && cards) {
-        cards.classList.add('expanded');
+    if (header && accordion) {
+        accordion.classList.add('expanded');
         header.setAttribute('aria-expanded', 'true');
-        const firstCard = cards.querySelector('.university-card');
+        const firstCard = accordion.querySelector('.university-card');
         if (firstCard) {
             firstCard.setAttribute('tabindex', '0');
         }
