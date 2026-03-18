@@ -57,6 +57,40 @@ function bindReviewsDots(slider) {
     });
 }
 
+function updatePartnersArrows(slider) {
+    const prevButton = document.querySelector('.partners-arrow-prev');
+    const nextButton = document.querySelector('.partners-arrow-next');
+
+    if (!prevButton || !nextButton) {
+        return;
+    }
+
+    const details = slider.track.details;
+    const maxIndex = details.maxIdx;
+    const currentIndex = details.rel;
+    const shouldDisable = maxIndex <= 0;
+
+    prevButton.disabled = shouldDisable || currentIndex <= 0;
+    nextButton.disabled = shouldDisable || currentIndex >= maxIndex;
+}
+
+function bindPartnersArrows(slider) {
+    const prevButton = document.querySelector('.partners-arrow-prev');
+    const nextButton = document.querySelector('.partners-arrow-next');
+
+    if (!prevButton || !nextButton) {
+        return;
+    }
+
+    prevButton.addEventListener('click', () => {
+        slider.prev();
+    });
+
+    nextButton.addEventListener('click', () => {
+        slider.next();
+    });
+}
+
 function initHeroSlider() {
     const sliderElement = document.querySelector('#hero-slider');
     if (!sliderElement || typeof KeenSlider === 'undefined') {
@@ -107,6 +141,66 @@ function initReviewsSlider() {
     });
 }
 
+function initPartnersSlider() {
+    const sliderElement = document.querySelector('#partners-slider');
+    if (!sliderElement || typeof KeenSlider === 'undefined') {
+        return;
+    }
+
+    new KeenSlider(sliderElement, {
+        loop: false,
+        rubberband: false,
+        mode: 'snap',
+        renderMode: 'performance',
+        slides: {
+            perView: 1,
+            spacing: 8,
+        },
+        breakpoints: {
+            '(min-width: 500px)': {
+                slides: {
+                    perView: 1,
+                    spacing: 8,
+                },
+            },
+            '(min-width: 770px)': {
+                slides: {
+                    perView: 2,
+                    spacing: 8,
+                },
+            },
+            '(min-width: 1024px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 8,
+                },
+            },
+            '(min-width: 1400px)': {
+                slides: {
+                    perView: 3,
+                    spacing: 16,
+                },
+            },
+            '(min-width: 1920px)': {
+                slides: {
+                    perView: 4,
+                    spacing: 16,
+                },
+            },
+        },
+        created(slider) {
+            bindPartnersArrows(slider);
+            updatePartnersArrows(slider);
+        },
+        slideChanged(slider) {
+            updatePartnersArrows(slider);
+        },
+        optionsChanged(slider) {
+            updatePartnersArrows(slider);
+        },
+    });
+}
+
 async function initPage() {
     await loadComponent('#header-root', 'header.html');
     await loadComponent('#hero-root', 'hero.html');
@@ -118,6 +212,7 @@ async function initPage() {
     await loadComponent('#partners-root', 'partners.html');
     initHeroSlider();
     initReviewsSlider();
+    initPartnersSlider();
 }
 
 initPage();
