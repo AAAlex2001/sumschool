@@ -210,6 +210,7 @@ async function initPage() {
     await loadComponent('#university-root', 'university.html');
     await loadComponent('#reviews-root', 'reviews.html');
     await loadComponent('#partners-root', 'partners.html');
+    await loadComponent('#footer-root', 'footer.html');
     initHeroSlider();
     initReviewsSlider();
     initPartnersSlider();
