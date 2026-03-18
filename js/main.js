@@ -20,11 +20,35 @@ function updateHeroDots(slider) {
     });
 }
 
+function updateReviewsDots(slider) {
+    const currentIndex = slider.track.details.rel;
+    const paginations = document.querySelectorAll('.reviews-pagination');
+    paginations.forEach((pagination) => {
+        const dots = pagination.querySelectorAll('.reviews-pagination-dot');
+        dots.forEach((dot, index) => {
+            dot.classList.toggle('is-active', index === currentIndex);
+            dot.setAttribute('aria-current', index === currentIndex ? 'true' : 'false');
+        });
+    });
+}
+
 function bindHeroDots(slider) {
     const paginations = document.querySelectorAll('.hero-pagination');
 
     paginations.forEach((pagination) => {
         const dots = pagination.querySelectorAll('.hero-pagination-dot');
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => {
+                slider.moveToIdx(index);
+            });
+        });
+    });
+}
+
+function bindReviewsDots(slider) {
+    const paginations = document.querySelectorAll('.reviews-pagination');
+    paginations.forEach((pagination) => {
+        const dots = pagination.querySelectorAll('.reviews-pagination-dot');
         dots.forEach((dot, index) => {
             dot.addEventListener('click', () => {
                 slider.moveToIdx(index);
@@ -58,6 +82,31 @@ function initHeroSlider() {
     });
 }
 
+function initReviewsSlider() {
+    const sliderElement = document.querySelector('#reviews-slider');
+    if (!sliderElement || typeof KeenSlider === 'undefined') {
+        return;
+    }
+
+    new KeenSlider(sliderElement, {
+        loop: true,
+        rubberband: false,
+        mode: 'snap',
+        renderMode: 'performance',
+        slides: {
+            perView: 1,
+            spacing: 2,
+        },
+        created(slider) {
+            bindReviewsDots(slider);
+            updateReviewsDots(slider);
+        },
+        slideChanged(slider) {
+            updateReviewsDots(slider);
+        },
+    });
+}
+
 async function initPage() {
     await loadComponent('#header-root', 'header.html');
     await loadComponent('#hero-root', 'hero.html');
@@ -67,6 +116,7 @@ async function initPage() {
     await loadComponent('#university-root', 'university.html');
     await loadComponent('#reviews-root', 'reviews.html');
     initHeroSlider();
+    initReviewsSlider();
 }
 
 initPage();
