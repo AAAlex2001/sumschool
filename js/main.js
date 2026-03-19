@@ -214,6 +214,10 @@ async function initPage() {
     await loadComponent('#reviews-root', 'reviews.html');
     await loadComponent('#partners-root', 'partners.html');
     await loadComponent('#footer-root', 'footer.html');
+    await loadComponent('#up-root', 'up.html');
+    if (typeof initUpButton === 'function') {
+        initUpButton();
+    }
     initHeroSlider();
     initReviewsSlider();
     initPartnersSlider();
