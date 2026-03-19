@@ -10,11 +10,14 @@ function burgerMenu() {
 
     burger.dataset.burgerInitialized = 'true';
 
+    const burgerImg = burger.querySelector('img');
+
     burger.addEventListener('click', () => {
         const isOpen = header.classList.toggle('menu-open');
         burger.setAttribute('aria-expanded', String(isOpen));
         menu.setAttribute('aria-hidden', String(!isOpen));
         burger.setAttribute('aria-label', isOpen ? 'Закрыть меню' : 'Открыть меню');
+        burgerImg.src = isOpen ? '../../assets/close.svg' : '../../assets/burger.svg';
         if (isOpen) {
             document.body.style.overflow = 'hidden';
         } else {
