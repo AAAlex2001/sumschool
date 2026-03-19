@@ -9,6 +9,11 @@
 .hero-slide {
     min-width: 100%;
     max-width: 100%;
+    display: flex;
+}
+
+.hero-slide .hero-container {
+    flex: 1;
 }
 
 .hero-container {

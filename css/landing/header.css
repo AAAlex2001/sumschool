@@ -152,10 +152,13 @@
 .nav-dropdown__toggle {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     align-items: center;
     gap: 4px;
+    width: 160px;
     padding: 12px 16px;
     background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     border: none;
     border-radius: 16px;
     cursor: pointer;
@@ -165,11 +168,12 @@
     line-height: 17px;
     letter-spacing: 0.01em;
     color: #000000;
+    box-sizing: border-box;
     transition: background 0.25s ease, border-radius 0.25s ease;
 }
 
 .nav-dropdown.open .nav-dropdown__toggle {
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.7);
     border-radius: 16px 16px 0 0;
 }
 
@@ -191,7 +195,8 @@
     width: 160px;
     box-sizing: border-box;
     padding: 0 16px 12px;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(20px);
     border-radius: 0 0 16px 16px;
     opacity: 0;
     visibility: hidden;
@@ -329,6 +334,7 @@
 .header-container.menu-open .burger img {
     opacity: 0.75;
 }
+
 
 
 @media (min-width: 770px) {
