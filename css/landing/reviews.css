@@ -269,6 +269,7 @@
 
     .reviews-container {
         padding: 80px 48px;
+        border-radius: 32px;
     }
 
     .review-media {

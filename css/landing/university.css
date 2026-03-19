@@ -213,18 +213,17 @@
 }
 
 @media (min-width: 1400px) {
-    .container-university {
-        border-radius: 32px;
-    }
     .university-cards {
         gap: 16px;
         grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
     }
     .university-container {
         padding: 48px;
+        border-radius: 32px;
     }
     .university-title {
         margin-left: 48px;
+        font-size: 48px;
     }
     .university-card {
         gap: 16px;
@@ -238,10 +237,12 @@
     .university-container {
         padding: 64px;
     }
+
     .university-title {
         margin-left: 64px;
         font-size: 48px;
     }
+
     .university-card {
         padding: 48px 24px;
     }
