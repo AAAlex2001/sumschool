@@ -203,6 +203,7 @@ function initPartnersSlider() {
 
 async function initPage() {
     await loadComponent('#header-root', 'header.html');
+    await loadComponent('#burger-menu-root', 'burger-menu.html');
     if (typeof burgerMenu === 'function') {
         burgerMenu();
     }

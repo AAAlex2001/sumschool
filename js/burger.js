@@ -19,7 +19,38 @@ function burgerMenu() {
             document.body.style.overflow = 'hidden';
         } else {
             document.body.style.overflow = '';
+            menu.querySelectorAll('.burger-dropdown.open').forEach(function(dd) {
+                dd.classList.remove('open');
+                dd.querySelector('.burger-dropdown__toggle').setAttribute('aria-expanded', 'false');
+            });
         }
+    });
+
+    // burger dropdown toggles
+    menu.querySelectorAll('.burger-dropdown__toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function() {
+            var dropdown = toggle.closest('.burger-dropdown');
+            var isOpen = dropdown.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    });
+
+    document.querySelectorAll('.nav-dropdown__toggle').forEach(function(toggle) {
+        toggle.addEventListener('click', function(e) {
+            e.stopPropagation();
+            var dropdown = toggle.closest('.nav-dropdown');
+            var isOpen = dropdown.classList.toggle('open');
+            toggle.setAttribute('aria-expanded', String(isOpen));
+        });
+    });
+
+    document.addEventListener('click', function(e) {
+        document.querySelectorAll('.nav-dropdown.open').forEach(function(dd) {
+            if (!dd.contains(e.target)) {
+                dd.classList.remove('open');
+                dd.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'false');
+            }
+        });
     });
 }
 
