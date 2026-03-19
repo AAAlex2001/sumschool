@@ -225,6 +225,21 @@
     text-align: left;
 }
 
+@media (max-width: 769px) {
+    .footer-left-column {
+        display: contents;
+    }
+    .footer-logos {
+        order: 1;
+    }
+    .footer-right-column {
+        order: 2;
+    }
+    .footer-bottom {
+        order: 3;
+    }
+}
+
 @media (min-width: 500px) {
     .container-footer {
         padding: 48px 12px;
