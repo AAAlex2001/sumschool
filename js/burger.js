@@ -24,13 +24,12 @@ function burgerMenu() {
             document.body.style.overflow = '';
             menu.querySelectorAll('.burger-dropdown.open').forEach(function(dd) {
                 dd.classList.remove('open');
-                dd.querySelector('.burger-dropdown__toggle').setAttribute('aria-expanded', 'false');
+                dd.querySelector('.burger-dropdown-toggle').setAttribute('aria-expanded', 'false');
             });
         }
     });
 
-    // burger dropdown toggles
-    menu.querySelectorAll('.burger-dropdown__toggle').forEach(function(toggle) {
+    menu.querySelectorAll('.burger-dropdown-toggle').forEach(function(toggle) {
         toggle.addEventListener('click', function() {
             var dropdown = toggle.closest('.burger-dropdown');
             var isOpen = dropdown.classList.toggle('open');
@@ -38,7 +37,7 @@ function burgerMenu() {
         });
     });
 
-    document.querySelectorAll('.nav-dropdown__toggle').forEach(function(toggle) {
+    document.querySelectorAll('.nav-dropdown-toggle').forEach(function(toggle) {
         toggle.addEventListener('click', function(e) {
             e.stopPropagation();
             var dropdown = toggle.closest('.nav-dropdown');
@@ -51,7 +50,7 @@ function burgerMenu() {
         document.querySelectorAll('.nav-dropdown.open').forEach(function(dd) {
             if (!dd.contains(e.target)) {
                 dd.classList.remove('open');
-                dd.querySelector('.nav-dropdown__toggle').setAttribute('aria-expanded', 'false');
+                dd.querySelector('.nav-dropdown-toggle').setAttribute('aria-expanded', 'false');
             }
         });
     });
