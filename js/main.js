@@ -206,9 +206,6 @@ async function initPage() {
     if (typeof burgerMenu === 'function') {
         burgerMenu();
     }
-    if (typeof initSchoolsDropdowns === 'function') {
-        initSchoolsDropdowns();
-    }
     await loadComponent('#hero-root', 'hero.html');
     await loadComponent('#stats-root', 'stats.html');
     await loadComponent('#news-root', 'news.html');
