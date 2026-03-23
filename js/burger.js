@@ -4,6 +4,17 @@ function burgerMenu() {
     const menu = document.querySelector('.burger-menu');
     if (!header || !burger || !menu) return;
 
+    header.querySelectorAll('.language-button').forEach(function(button) {
+        button.addEventListener('click', function() {
+            header.querySelectorAll('.language-button').forEach(function(languageButton) {
+                const isActive = languageButton === button;
+
+                languageButton.classList.toggle('active', isActive);
+                languageButton.setAttribute('aria-pressed', String(isActive));
+            });
+        });
+    });
+
     function syncNavDropdownWidth(dropdown) {
         const toggle = dropdown.querySelector('.nav-dropdown-toggle');
         const list = dropdown.querySelector('.nav-dropdown-list');

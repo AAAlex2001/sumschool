@@ -112,6 +112,11 @@
     text-align: center;
 }
 
+.university-name:hover {
+    color: #376BCA;
+    cursor: pointer;
+}
+
 .university-country {
     color: #686868;
     font-family: 'Inter', sans-serif;
