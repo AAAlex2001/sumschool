@@ -25,7 +25,7 @@ function buttonRollUp(button) {
 
             window.scrollTo({
                 top: Math.max(targetPosition, 0),
-                behavior: 'smooth'
+                behavior: 'auto'
             });
         }
     }
