@@ -57,23 +57,6 @@ function bindReviewsDots(slider) {
     });
 }
 
-function updatePartnersArrows(slider) {
-    const prevButton = document.querySelector('.partners-arrow-prev');
-    const nextButton = document.querySelector('.partners-arrow-next');
-
-    if (!prevButton || !nextButton) {
-        return;
-    }
-
-    const details = slider.track.details;
-    const maxIndex = details.maxIdx;
-    const currentIndex = details.rel;
-    const shouldDisable = maxIndex <= 0;
-
-    prevButton.disabled = shouldDisable || currentIndex <= 0;
-    nextButton.disabled = shouldDisable || currentIndex >= maxIndex;
-}
-
 function bindPartnersArrows(slider) {
     const prevButton = document.querySelector('.partners-arrow-prev');
     const nextButton = document.querySelector('.partners-arrow-next');
@@ -148,7 +131,7 @@ function initPartnersSlider() {
     }
 
     new KeenSlider(sliderElement, {
-        loop: false,
+        loop: true,
         rubberband: false,
         mode: 'snap',
         renderMode: 'performance',
@@ -190,13 +173,6 @@ function initPartnersSlider() {
         },
         created(slider) {
             bindPartnersArrows(slider);
-            updatePartnersArrows(slider);
-        },
-        slideChanged(slider) {
-            updatePartnersArrows(slider);
-        },
-        optionsChanged(slider) {
-            updatePartnersArrows(slider);
         },
     });
 }
