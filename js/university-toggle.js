@@ -12,11 +12,21 @@ function toggleUniversitySection(headerElement) {
 function buttonRollUp(button) {
     const accordion = button.closest('.university-accordion');
     if (!accordion) return;
-    
+
     accordion.classList.remove('expanded');
-    
+
     const header = accordion.previousElementSibling;
     if (header && header.classList.contains('university-header')) {
         header.setAttribute('aria-expanded', 'false');
+
+        const target = header.querySelector('.university-section-title');
+        if (target) {
+            const targetPosition = target.getBoundingClientRect().top + window.scrollY - 350;
+
+            window.scrollTo({
+                top: Math.max(targetPosition, 0),
+                behavior: 'smooth'
+            });
+        }
     }
 }
