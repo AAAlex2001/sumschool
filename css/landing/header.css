@@ -60,6 +60,7 @@
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0%;
+    font-style: Regular;
 }
 
 .languages {
@@ -78,6 +79,7 @@
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 1%;
+    font-style: Regular;
 }
 
 .languages button.active {
@@ -98,6 +100,7 @@
     line-height: 120%;
     letter-spacing: 1%;
     display: none;
+    font-style: Bold;
 }
 
 .header-button:hover {
@@ -169,6 +172,7 @@
     color: #000000;
     box-sizing: border-box;
     transition: background 0.25s ease, border-radius 0.25s ease;
+    font-style: Regular;
 }
 
 .nav-dropdown.open .nav-dropdown-toggle {
@@ -226,6 +230,7 @@
     color: #003366;
     text-decoration: none;
     box-sizing: border-box;
+    font-style: Regular;
 }
 
 .nav-dropdown-list a:hover {
@@ -283,6 +288,7 @@
     transform: translateY(10px);
     opacity: 0;
     transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.2s ease;
+    font-style: Regular;
 }
 
 .burger-menu > a:hover {
@@ -400,6 +406,7 @@
     font-size: 16px;
     line-height: 140%;
     color: #003366;
+    font-style: Regular;
 }
 
 .burger-dropdown-arrow {
@@ -448,6 +455,7 @@
     border-radius: 0;
     transform: none;
     opacity: 1;
+    font-style: Regular;
 }
 
 .burger-dropdown-list a:hover {

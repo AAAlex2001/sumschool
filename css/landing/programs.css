@@ -22,6 +22,7 @@
     letter-spacing: 1%;
     margin: 0;
     text-align: left;
+    font-style: Bold;
 }
 
 .programs {
@@ -65,6 +66,7 @@
     margin: 0;
     text-align: left;
     align-self: stretch;
+    font-style: Regular;
 }
 
 .program-card::before {
@@ -92,6 +94,7 @@
     line-height: 140%;
     letter-spacing: 0%;
     text-align: left;
+    font-style: Regular;
 }
 
 .programs-description p {
@@ -117,6 +120,7 @@
     letter-spacing: 1%;
     max-width: 178px;
     align-self: flex-start;
+    font-style: Bold;
 }
 
 .programs-button:hover {

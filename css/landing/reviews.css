@@ -20,6 +20,7 @@
     margin: 0;
     color: #FFFFFF;
     text-align: left;
+    font-style: Bold;
 }
 
 
@@ -112,6 +113,7 @@
     color: #003366;
     text-align: left;
     cursor: pointer;
+    font-style: Bold;
 }
 
 .subject-university:hover {
@@ -127,6 +129,7 @@
     margin: 0;
     color: #000000;
     text-align: left;
+    font-style: Bold;
 }
 
 .reviewer-info {
@@ -138,6 +141,7 @@
     margin: 0;
     color: #494D4C;
     text-align: left;
+    font-style: Regular;
 }
 
 .review-photo {
@@ -195,6 +199,7 @@
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
+    font-style: Bold;
 }
 
 .reviews-button-outline {
@@ -209,6 +214,7 @@
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
+    font-style: Bold;
 }
 
 .reviews-button-outline:hover {

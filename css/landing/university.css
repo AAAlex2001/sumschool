@@ -15,6 +15,7 @@
     color: #000000;
     text-align: left;
     margin-left: 8px;
+    font-style: Bold;
 }
 
 .university-container {
@@ -75,6 +76,7 @@
     margin: 0;
     color: #000000;
     text-align: left;
+    font-style: Bold;
 }
 
 .university-card {
@@ -110,6 +112,7 @@
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
+    font-style: Bold;
 }
 
 .university-name:hover {
@@ -126,6 +129,7 @@
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
+    font-style: Regular;
 }
 
 .university-toggle-button {
@@ -149,6 +153,7 @@
     pointer-events: none;
     transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     margin-top: 16px;
+    font-style: Regular;
 }
 
 .university-accordion.expanded .university-toggle-button {

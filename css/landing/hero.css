@@ -1,3 +1,19 @@
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/Inter-Regular.woff2') format('woff2');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../../fonts/Inter-Bold.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+    font-display: swap;
+}
+
 .hero-slider-wrapper {
     width: 100%;
 }
@@ -78,7 +94,7 @@
 
 .content-text h1 {
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 32px;
     line-height: 100%;
@@ -89,7 +105,7 @@
 
 .content-text p {
     color: white;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -141,7 +157,7 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -155,7 +171,7 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
