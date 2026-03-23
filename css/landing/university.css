@@ -164,7 +164,7 @@
 @media (min-width: 500px) {
     .university-cards {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
     
@@ -185,7 +185,7 @@
 
 @media (min-width: 770px) {
     .university-cards {
-        grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }
     .university-title {
@@ -214,7 +214,7 @@
 @media (min-width: 1400px) {
     .university-cards {
         gap: 16px;
-        grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
+        grid-template-columns: repeat(4, 1fr);
     }
     .university-container {
         padding: 48px;
@@ -230,9 +230,6 @@
 }
 
 @media (min-width: 1920px) {
-    .university-cards {
-        grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
-    }
     .university-container {
         padding: 64px;
     }
