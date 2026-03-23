@@ -60,6 +60,11 @@
     font-size: 14px;
     line-height: 120%;
     letter-spacing: 0%;
+    transition: color 0.2s ease;
+}
+
+.nav-links a:hover {
+    color: #376BCA;
 }
 
 .languages {
@@ -78,6 +83,11 @@
     font-size: 14px;
     line-height: 100%;
     letter-spacing: 1%;
+    transition: color 0.2s ease;
+}
+
+.languages button:hover {
+    color: #376BCA;
 }
 
 .languages button.active {
@@ -166,9 +176,22 @@
     font-size: 14px;
     line-height: 17px;
     letter-spacing: 0.01em;
-    color: #000000;
+    color: #003366;
     box-sizing: border-box;
-    transition: background 0.25s ease, border-radius 0.25s ease;
+    transition: background 0.25s ease, border-radius 0.25s ease, color 0.2s ease;
+}
+
+.nav-dropdown:not(.open) .nav-dropdown-toggle:hover {
+    color: #376BCA;
+}
+
+.nav-dropdown-arrow path {
+    stroke: #003366;
+    transition: stroke 0.2s ease;
+}
+
+.nav-dropdown:not(.open) .nav-dropdown-toggle:hover .nav-dropdown-arrow path {
+    stroke: #376BCA;
 }
 
 .nav-dropdown.open .nav-dropdown-toggle {
@@ -176,6 +199,11 @@
     background: rgba(255, 255, 255, 0.7);
     backdrop-filter: blur(20px);
     border-radius: 16px 16px 0 0;
+    color: #000000;
+}
+
+.nav-dropdown.open .nav-dropdown-arrow path {
+    stroke: #000000;
 }
 
 .nav-dropdown-arrow {
@@ -226,10 +254,11 @@
     color: #003366;
     text-decoration: none;
     box-sizing: border-box;
+    transition: color 0.2s ease;
 }
 
 .nav-dropdown-list a:hover {
-    opacity: 0.7;
+    color: #376BCA;
 }
 
 /* burger */
@@ -282,11 +311,12 @@
     border-radius: 16px;
     transform: translateY(10px);
     opacity: 0;
-    transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.2s ease;
+    transition: transform 0.25s ease, opacity 0.25s ease, background-color 0.2s ease, color 0.2s ease;
 }
 
 .burger-menu > a:hover {
     background: rgba(255, 255, 255, 0.9);
+    color: #376BCA;
 }
 
 .header-container.menu-open .burger-menu {
@@ -392,6 +422,7 @@
     background: transparent;
     border: none;
     cursor: pointer;
+    transition: color 0.2s ease;
 }
 
 .burger-dropdown-label {
@@ -400,12 +431,21 @@
     font-size: 16px;
     line-height: 140%;
     color: #003366;
+    transition: color 0.2s ease;
 }
 
 .burger-dropdown-arrow {
     width: 16px;
     height: 16px;
     transition: transform 0.25s ease;
+}
+
+.burger-dropdown-toggle:hover .burger-dropdown-label {
+    color: #376BCA;
+}
+
+.burger-dropdown-toggle:hover .burger-dropdown-arrow path {
+    stroke: #376BCA;
 }
 
 .burger-dropdown.open .burger-dropdown-arrow {
@@ -448,9 +488,10 @@
     border-radius: 0;
     transform: none;
     opacity: 1;
+    transition: color 0.2s ease;
 }
 
 .burger-dropdown-list a:hover {
-    opacity: 0.7;
+    color: #376BCA;
     background: transparent;
 }
