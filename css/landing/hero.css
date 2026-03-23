@@ -2,6 +2,10 @@
     width: 100%;
 }
 
+.hero-stage {
+    position: relative;
+}
+
 #hero-slider {
     width: 100%;
 }
@@ -104,12 +108,15 @@
 }
 
 .hero-pagination {
+    position: absolute;
+    left: 12px;
+    bottom: 24px;
+    z-index: 2;
     display: flex;
     flex-direction: row;
     align-items: center;
     gap: 8px;
-    width: auto;
-    margin-top: auto;
+    width: max-content;
 }
 
 .hero-pagination-dot {
@@ -166,6 +173,10 @@
 
 @media (min-width: 500px) {
 
+    .hero-pagination {
+        left: 12px;
+    }
+
     .content-text h1 {
         font-size: 40px;
     }
@@ -177,10 +188,18 @@
     .hero-container {
         padding: 48px 16px;
     }
+
+    .hero-pagination {
+        left: 16px;
+    }
     
 }
 
 @media (min-width: 1024px) {
+
+    .hero-pagination {
+        left: 24px;
+    }
 
     .hero-container {
         flex-direction: row;
@@ -218,6 +237,11 @@
 
 @media (min-width: 1400px) {
 
+    .hero-pagination {
+        left: 48px;
+        bottom: 60px;
+    }
+
     .hero-container {
         padding: 80px 48px;
         gap: 24px;
@@ -242,6 +266,11 @@
 }
 
 @media (min-width: 1920px) {
+
+    .hero-pagination {
+        left: 64px;
+        bottom: 96px;
+    }
     
     .hero-container {
         padding: 96px 64px;
