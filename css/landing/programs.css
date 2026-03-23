@@ -117,6 +117,7 @@
     letter-spacing: 1%;
     max-width: 178px;
     align-self: flex-start;
+    white-space: nowrap;
 }
 
 .programs-button:hover {
