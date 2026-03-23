@@ -127,7 +127,7 @@
 
     .programs {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+        grid-template-columns: repeat(2, 1fr);
         gap: 8px;
     }
 
@@ -137,8 +137,7 @@
 @media (min-width: 770px) {
 
     .programs {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(236px, 1fr));
+        grid-template-columns: repeat(3, 1fr);
         gap: 8px;
     }
 
@@ -152,6 +151,11 @@
 
     .container-programs {
         padding: 48px 24px;
+    }
+
+    .programs {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 8px;
     }
 
 }
@@ -169,12 +173,11 @@
     }
 
     .programs-description {
-        max-width: 612px;
+        max-width: 50%;
     }
 
     .programs {
         gap: 8px 16px;
-        grid-template-columns: repeat(auto-fill, minmax(298px, 1fr));
     }
 
 }
@@ -184,10 +187,6 @@
 
     .container-programs {
         padding: 96px 64px;
-    }
-
-    .programs {
-        grid-template-columns: repeat(auto-fill, minmax(412px, 1fr));
     }
 
     .program-card {
