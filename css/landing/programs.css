@@ -17,12 +17,11 @@
     font-size: 32px;
     font-weight: 700;
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     line-height: 120%;
     letter-spacing: 1%;
     margin: 0;
     text-align: left;
-    font-style: Bold;
 }
 
 .programs {
@@ -58,7 +57,7 @@
 
 .program-name {
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 500;
     font-size: 16px;
     line-height: 140%;
@@ -66,7 +65,6 @@
     margin: 0;
     text-align: left;
     align-self: stretch;
-    font-style: Regular;
 }
 
 .program-card::before {
@@ -88,13 +86,12 @@
 
 .programs-description {
     color: #FFFFFF;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
     letter-spacing: 0%;
     text-align: left;
-    font-style: Regular;
 }
 
 .programs-description p {
@@ -113,14 +110,13 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
     max-width: 178px;
     align-self: flex-start;
-    font-style: Bold;
 }
 
 .programs-button:hover {

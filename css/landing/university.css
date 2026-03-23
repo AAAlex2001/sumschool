@@ -7,7 +7,7 @@
 .university-title {
     font-size: 32px;
     color: #27509B;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 1%;
@@ -15,7 +15,6 @@
     color: #000000;
     text-align: left;
     margin-left: 8px;
-    font-style: Bold;
 }
 
 .university-container {
@@ -69,14 +68,13 @@
 .university-section-title {
     font-size: 18px;
     color: #27509B;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     line-height: 120%;
     letter-spacing: 1%;
     margin: 0;
     color: #000000;
     text-align: left;
-    font-style: Bold;
 }
 
 .university-card {
@@ -105,14 +103,13 @@
 
 .university-name {
     color: #003366;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
-    font-style: Bold;
 }
 
 .university-name:hover {
@@ -122,14 +119,13 @@
 
 .university-country {
     color: #686868;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 0%;
     margin: 0;
     text-align: center;
-    font-style: Regular;
 }
 
 .university-toggle-button {
@@ -139,7 +135,7 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
@@ -153,7 +149,6 @@
     pointer-events: none;
     transition: opacity 0.2s ease, color 0.2s ease, border-color 0.2s ease;
     margin-top: 16px;
-    font-style: Regular;
 }
 
 .university-accordion.expanded .university-toggle-button {

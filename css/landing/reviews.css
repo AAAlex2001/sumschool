@@ -12,7 +12,7 @@
 
 
 .reviews-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
@@ -20,7 +20,6 @@
     margin: 0;
     color: #FFFFFF;
     text-align: left;
-    font-style: Bold;
 }
 
 
@@ -104,7 +103,7 @@
 }
 
 .subject-university {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 140%;
@@ -113,7 +112,6 @@
     color: #003366;
     text-align: left;
     cursor: pointer;
-    font-style: Bold;
 }
 
 .subject-university:hover {
@@ -121,7 +119,7 @@
 }
 
 .reviewer {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 24px;
     line-height: 120%;
@@ -129,11 +127,10 @@
     margin: 0;
     color: #000000;
     text-align: left;
-    font-style: Bold;
 }
 
 .reviewer-info {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 120%;
@@ -141,7 +138,6 @@
     margin: 0;
     color: #494D4C;
     text-align: left;
-    font-style: Regular;
 }
 
 .review-photo {
@@ -168,7 +164,7 @@
 }
 
 .review p {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 400;
     font-size: 16px;
     line-height: 140%;
@@ -194,12 +190,11 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
-    font-style: Bold;
 }
 
 .reviews-button-outline {
@@ -209,12 +204,11 @@
     padding: 16px 24px;
     cursor: pointer;
     border-radius: 32px;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Inter';
     font-weight: 700;
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
-    font-style: Bold;
 }
 
 .reviews-button-outline:hover {
