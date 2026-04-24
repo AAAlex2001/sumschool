@@ -1,12 +1,3 @@
-async function loadComponent(selector, path) {
-    const el = document.querySelector(selector);
-    if (!el) return;
-    const res = await fetch(path);
-    const html = await res.text();
-    const doc = new DOMParser().parseFromString(html, 'text/html');
-    el.innerHTML = doc.body.innerHTML;
-}
-
 function updateHeroDots(slider) {
     const currentIndex = slider.track.details.rel;
     const paginations = document.querySelectorAll('.hero-pagination');
@@ -178,11 +169,7 @@ function initPartnersSlider() {
 }
 
 async function initPage() {
-    await loadComponent('#header-root', 'header.html');
-    await loadComponent('#burger-menu-root', 'burger-menu.html');
-    if (typeof burgerMenu === 'function') {
-        burgerMenu();
-    }
+    await mountHeader();
     await loadComponent('#hero-root', 'hero.html');
     await loadComponent('#stats-root', 'stats.html');
     await loadComponent('#news-root', 'news.html');
@@ -190,11 +177,7 @@ async function initPage() {
     await loadComponent('#university-root', 'university.html');
     await loadComponent('#reviews-root', 'reviews.html');
     await loadComponent('#partners-root', 'partners.html');
-    await loadComponent('#footer-root', 'footer.html');
-    await loadComponent('#up-root', 'up.html');
-    if (typeof initUpButton === 'function') {
-        initUpButton();
-    }
+    await mountFooter();
     initHeroSlider();
     initReviewsSlider();
     initPartnersSlider();
