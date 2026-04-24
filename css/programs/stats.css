@@ -1,0 +1,226 @@
+.container-stats {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    padding: 32px 12px;
+    background-image:
+        linear-gradient(180deg, rgba(36, 110, 88, 0.44) 0.03%, rgba(16, 70, 54, 0.42) 100.03%),
+        url('../../assets/stats.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 16px;
+}
+
+.stats-card {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 32px 24px;
+    background: #FFFFFF80;
+    border-radius: 16px;
+}
+
+.stats-text{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.stats-text h1 {
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    text-align: left;
+    margin: 0;
+}
+
+.stats-text p {
+    color: #000000;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0%;
+    text-align: left;
+    margin: 0;
+}
+
+.stats-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.stats-button-filled {
+    background-color: #27509B;
+    color: white;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+}
+
+.stats-button-outline {
+    background-color: transparent;
+    color: #27509B;
+    border: 1px solid #27509B;
+    padding: 16px 24px;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+}
+
+.stats-button-outline img {
+    margin-left: 8px;
+    align-self: center;
+}
+
+.stats-button-filled:hover {
+    background-color: #376BCA;
+    border-color: #376BCA;
+}
+
+.stats-button-outline:hover {
+    color: #376BCA;
+    border-color: #376BCA;
+}
+
+.stats {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stats-item {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+}
+
+.stats-item-title {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    text-align: center;
+    margin: 0;
+}
+
+.stats-item-description {
+    color: #FFFFFF;
+    font-family: 'Inter';
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    text-align: center;
+    margin: 0;
+}
+
+@media (min-width: 500px) {
+    .stats {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .stats-item {
+        flex: 1 1 calc((100% - 16px) / 3);
+    }
+
+    .stats-buttons {
+        gap: 8px;
+    }
+}
+
+@media (min-width: 770px) {
+    
+    .container-stats {
+        padding: 32px 16px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .container-stats {
+        padding: 48px 24px;
+    }
+    
+    .container-stats {
+        flex-direction: row;
+    }
+
+    .stats-card {
+        flex: 1 1 50%;
+    }
+
+    .stats {
+        flex: 1 1 50%;
+    }
+}
+
+@media (min-width: 1400px) {
+    
+    .container-stats {
+        padding: 80px 48px;
+        border-radius: 32px;
+    }
+
+    .stats-text h1 {
+        font-size: 48px;
+    }
+
+    .stats-item-title {
+        font-size: 96px;
+    }
+
+    .stats-item-description {
+        font-size: 18px;
+    }
+
+    .stats-text {
+        gap: 24px;
+    }
+
+    .stats-card {
+        gap: 32px;
+        padding: 48px 32px;
+    }
+
+    .stats-buttons {
+        gap: 24px;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container-stats {
+        padding: 96px 64px;
+    }
+}
