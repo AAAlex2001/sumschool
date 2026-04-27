@@ -118,6 +118,7 @@
 
     .card-sumschool {
         padding: 48px 32px;
+        max-width: 840px;
     }
 
 }

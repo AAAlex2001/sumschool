@@ -1,0 +1,115 @@
+.container-why {
+    display: flex;
+    flex-direction: column;
+    padding: 32px 12px;
+    gap: 24px;
+    background-image:
+        linear-gradient(264.7deg, #369D88 0%, #163B33 100%),
+        url('../../assets/program.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: multiply, normal;
+    border-radius: 16px;
+}
+
+.why-content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.title-why {
+    font-family: "Inter";
+    margin: 0;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.why-list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-width: 840px;
+}
+
+.opportunity-subtitle {
+    font-family: "Inter";
+    margin: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    color: #FFFFFF;
+}
+
+.opportunity-list {
+    margin: 0;
+    padding-left: 30px;
+}
+
+.opportunity-list li {
+    padding-bottom: 10px;
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    color: #FFFFFF;
+}
+
+.opportunity-list li:last-child {
+    padding-bottom: 0px;
+}
+
+@media (min-width: 770px) {
+
+    .container-why {
+        padding: 32px 16px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .container-why {
+        padding: 48px 24px;
+    }
+
+    .why-list {
+        max-width: 840px;
+    }
+    
+}
+
+@media (min-width: 1440px) {
+
+    .container-why {
+        padding: 80px 48px;
+        border-radius: 32px;
+        gap: 32px;
+    }
+
+    .why-content {
+        gap: 24px;
+    }
+
+    .title-why {
+        font-size: 48px;
+    }
+
+     .opportunity-subtitle {
+        font-size: 32px;
+    }
+    
+}
+
+@media (min-width: 1920px) {
+
+    .container-why {
+        padding: 96px 64px;
+    }
+    
+}
