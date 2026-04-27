@@ -3,11 +3,34 @@
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
-    gap: 16px;
+    width: 100%;
+    overflow: hidden;
 }
 
 .photo {
-    width: 48px;
-    height: 48px;
+    display: inline-block;
+    width: 210px;
+    height: 118px;
+    margin-right: 4px;
     border-radius: 32px;
+}
+
+@media (min-width: 500px) {
+
+    .photo {
+        width: 420px;
+        height: 236px;
+        margin-right: 16px;
+    }
+    
+}
+
+@media (min-width: 1024px) {
+
+    .photo {
+        width: 840px;
+        height: 427px;
+        margin-right: 16px;
+    }
+    
 }
