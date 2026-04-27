@@ -7,17 +7,30 @@
     overflow: hidden;
 }
 
-.photo {
+.photo-frame {
     display: inline-block;
     width: 210px;
     height: 118px;
     margin-right: 4px;
+    overflow: hidden;
     border-radius: 32px;
+}
+
+.photo {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.photo-frame:hover .photo {
+    transform: scale(1.04);
 }
 
 @media (min-width: 500px) {
 
-    .photo {
+    .photo-frame {
         width: 420px;
         height: 236px;
         margin-right: 16px;
@@ -27,7 +40,7 @@
 
 @media (min-width: 1024px) {
 
-    .photo {
+    .photo-frame {
         width: 840px;
         height: 427px;
         margin-right: 16px;
