@@ -37,22 +37,6 @@
     animation: buttonPulse 0.5s ease;
 }
 
-@keyframes buttonPulse {
-    0% {
-        transform: scale(1);
-        opacity: 1;
-    }
-    50% {
-        transform: scale(0.9);
-        opacity: 0.7;
-    }
-    100% {
-        transform: scale(1);
-        opacity: 1;
-    }
-}
-
 .up:hover {
-    transform: translateY(-5px);
     box-shadow: 0 6px 15px rgba(0, 51, 102, 0.3);
 }

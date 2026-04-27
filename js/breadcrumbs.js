@@ -7,11 +7,14 @@ function breadcrumbs() {
     breadcrumbsContainer.innerHTML = '';
     const currentKey = breadcrumbsContainer.dataset.breadcrumbCurrent || 'breadcrumbs.about';
     const homeHref = breadcrumbsContainer.dataset.breadcrumbHomeHref || '../landing/main.html';
+    const homeLabel = breadcrumbsContainer.dataset.breadcrumbHomeLabel || 'Главная';
+    const currentLabel = breadcrumbsContainer.dataset.breadcrumbCurrentLabel || 'О школах';
 
     const homeLink = document.createElement('a');
     homeLink.href = homeHref;
     homeLink.className = 'breadcrumbs-link';
     homeLink.setAttribute('data-i18n', 'breadcrumbs.home');
+    homeLink.textContent = homeLabel;
 
     const separator = document.createElement('span');
     separator.className = 'breadcrumbs-separator';
@@ -20,6 +23,7 @@ function breadcrumbs() {
     const currentPage = document.createElement('span');
     currentPage.className = 'breadcrumbs-current';
     currentPage.setAttribute('data-i18n', currentKey);
+    currentPage.textContent = currentLabel;
 
     breadcrumbsContainer.appendChild(homeLink);
     breadcrumbsContainer.appendChild(separator);
