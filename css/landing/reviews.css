@@ -96,7 +96,7 @@
     overflow-y: auto;
     border-radius: 16px 16px 0 0;
     scrollbar-width: thin;
-    scrollbar-color: #003366 #e8ebe9;
+    scrollbar-color: #003366 transparent;
 }
 
 .reviews-container-reviews::-webkit-scrollbar {
@@ -104,7 +104,7 @@
 }
 
 .reviews-container-reviews::-webkit-scrollbar-track {
-    background: #e8ebe9;
+    background: transparent;
     border-radius: 4px;
 }
 
@@ -117,4 +117,82 @@
     display: none;
     width: 0;
     height: 0;
+}
+
+.reviews-container-reviews-card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 16px;
+}
+
+.reviews-container-reviews-card:hover {
+    background-color: #BAE4D7;
+    cursor: pointer;
+}
+
+.reviews-container-reviews-card:active {
+    background-color: #BAE4D7;
+    cursor: pointer;
+}
+
+.reviews-container-reviews-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 8px 12px;
+}
+
+.reviews-container-reviews-card-title {
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    margin: 0;
+    color: #1D1D1F;
+    text-align: left;
+}
+
+.reviews-container-reviews-card-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 140%;
+    letter-spacing: 0.00em;
+    margin: 0;
+    color: #494D4C;
+    text-align: left;
+}
+
+.reviews-container-reviews-card-hashtag {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.00em;
+    margin: 0;
+    color: #003366;
+    text-align: left;
+}
+
+.reviews-button {
+    display: block;
+    background-color: #27509B;
+    color: #FFFFFF;
+    border: 1px solid #27509B;
+    padding: 16px 0;
+    cursor: pointer;
+    border-radius: 32px;
+    font-family: 'Inter';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 1%;
+    max-width: 145px;
+    text-decoration: none;
+    text-align: center;
+}
+
+@media (min-width: 770px) {
+    
 }
