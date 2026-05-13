@@ -87,3 +87,13 @@
     text-align: left;
     font-style: italic;
 }
+
+.reviews-container-reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    max-height: 640px;
+    overflow-y: auto;
+    border-radius: 16px 16px 0 0;
+    scrollbar-color: #003366;
+}
