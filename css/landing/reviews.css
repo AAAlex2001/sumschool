@@ -2,7 +2,6 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
-    padding: 0 13px;
 }
 
 .reviews-title {
@@ -175,8 +174,15 @@
     text-align: left;
 }
 
+.reviews-button-wrap {
+    display: block;
+}
+
 .reviews-button {
     display: block;
+    box-sizing: border-box;
+    width: 145px;
+    max-width: 100%;
     background-color: #27509B;
     color: #FFFFFF;
     border: 1px solid #27509B;
@@ -188,7 +194,6 @@
     font-size: 16px;
     line-height: 120%;
     letter-spacing: 1%;
-    max-width: 145px;
     text-decoration: none;
     text-align: center;
 }
@@ -204,13 +209,52 @@
         flex-basis: 100%;
     }
 
-    .reviews-container-review,
     .reviews-container-reviews {
+        flex: 0 1 238px;
+        min-width: 0;
+    }
+    .reviews-container-review {
         flex: 1;
         min-width: 0;
     }
 
-    .reviews-button {
+    .reviews-button-wrap {
         flex-basis: 100%;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    .reviews-container-reviews {
+        flex: 0 1 244px;
+        min-width: 0;
+    }
+}
+
+@media (min-width: 1440px) {
+    .reviews-title {
+        font-size: 48px;
+    }
+    .reviews-container-reviews {
+        flex: 0 1 435px;
+        min-width: 0;
+    }
+    .reviews-container-review-body p {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .reviews-container-reviews {
+        flex: 0 1 603px;
+        min-width: 0;
+    }
+
+    .reviews-container-reviews-card {
+        flex-direction: row;
+    }
+    .reviews-container-reviews-card-body {
+        justify-content: space-between;
     }
 }
