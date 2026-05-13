@@ -11,18 +11,6 @@ function updateHeroDots(slider) {
     });
 }
 
-function updateReviewsDots(slider) {
-    const currentIndex = slider.track.details.rel;
-    const paginations = document.querySelectorAll('.reviews-pagination');
-    paginations.forEach((pagination) => {
-        const dots = pagination.querySelectorAll('.reviews-pagination-dot');
-        dots.forEach((dot, index) => {
-            dot.classList.toggle('is-active', index === currentIndex);
-            dot.setAttribute('aria-current', index === currentIndex ? 'true' : 'false');
-        });
-    });
-}
-
 function bindHeroDots(slider) {
     const paginations = document.querySelectorAll('.hero-pagination');
 
@@ -35,19 +23,6 @@ function bindHeroDots(slider) {
         });
     });
 }
-
-function bindReviewsDots(slider) {
-    const paginations = document.querySelectorAll('.reviews-pagination');
-    paginations.forEach((pagination) => {
-        const dots = pagination.querySelectorAll('.reviews-pagination-dot');
-        dots.forEach((dot, index) => {
-            dot.addEventListener('click', () => {
-                slider.moveToIdx(index);
-            });
-        });
-    });
-}
-
 function bindPartnersArrows(slider) {
     const prevButton = document.querySelector('.partners-arrow-prev');
     const nextButton = document.querySelector('.partners-arrow-next');
@@ -86,31 +61,6 @@ function initHeroSlider() {
         },
         slideChanged(slider) {
             updateHeroDots(slider);
-        },
-    });
-}
-
-function initReviewsSlider() {
-    const sliderElement = document.querySelector('#reviews-slider');
-    if (!sliderElement || typeof KeenSlider === 'undefined') {
-        return;
-    }
-
-    new KeenSlider(sliderElement, {
-        loop: true,
-        rubberband: false,
-        mode: 'snap',
-        renderMode: 'performance',
-        slides: {
-            perView: 1,
-            spacing: 2,
-        },
-        created(slider) {
-            bindReviewsDots(slider);
-            updateReviewsDots(slider);
-        },
-        slideChanged(slider) {
-            updateReviewsDots(slider);
         },
     });
 }
@@ -179,7 +129,6 @@ async function initPage() {
     await loadComponent('#partners-root', 'partners.html');
     await mountFooter();
     initHeroSlider();
-    initReviewsSlider();
     initPartnersSlider();
 }
 
