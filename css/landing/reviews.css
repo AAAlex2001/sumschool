@@ -194,5 +194,23 @@
 }
 
 @media (min-width: 770px) {
-    
+    .reviews-container-main {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: flex-start;
+    }
+
+    .reviews-title {
+        flex-basis: 100%;
+    }
+
+    .reviews-container-review,
+    .reviews-container-reviews {
+        flex: 1;
+        min-width: 0;
+    }
+
+    .reviews-button {
+        flex-basis: 100%;
+    }
 }
