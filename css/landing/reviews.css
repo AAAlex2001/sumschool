@@ -134,6 +134,10 @@
     cursor: pointer;
 }
 
+.reviews-container-reviews-card.is-active {
+    background-color: #BAE4D7;
+}
+
 .reviews-container-reviews-card-body {
     display: flex;
     flex-direction: column;
