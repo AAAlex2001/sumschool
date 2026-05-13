@@ -1,56 +1,89 @@
-.reviews-container {
+.reviews-container-main {
     display: flex;
     flex-direction: column;
     gap: 32px;
-    background: linear-gradient(264.7deg, #369D88 0%, #163B33 100%);
-    border-radius: 16px;
-    padding: 48px 12px;
-    box-sizing: border-box;
-    overflow: hidden;
-    width: 100%;
+    padding: 0 13px;
 }
-
 
 .reviews-title {
     font-family: 'Inter';
     font-weight: 700;
     font-size: 32px;
     line-height: 120%;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
     margin: 0;
-    color: #FFFFFF;
+    color: #000000;
     text-align: left;
 }
 
-.review-content {
+.reviews-container-review {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.reviews-container-review-body-header {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    margin-bottom: 8px;
+}
+
+.reviews-container-review-body-text-container {
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
 
-.reviews-button {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-    justify-content: center;
-    align-items: flex-start;
-}
-
-.reviews-button-outline {
-    background-color: transparent;
-    color: #FFFFFF;
-    border: 1px solid #FFFFFF;
-    padding: 16px 24px;
-    cursor: pointer;
-    border-radius: 32px;
+.reviews-container-review-title {
     font-family: 'Inter';
     font-weight: 700;
-    font-size: 16px;
+    font-size: 24px;
     line-height: 120%;
-    letter-spacing: 1%;
+    letter-spacing: 0.01em;
+    margin: 0;
+    color: #000000;
+    text-align: left;
 }
 
-.reviews-button-outline:hover {
-    color: #9FC1FF;
-    border-color: #9FC1FF;
+.reviews-container-review-text {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    margin: 0;
+    color: #494D4C;
+    text-align: left;
+}
+
+.reviews-container-review-hashtag {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 120%;
+    letter-spacing: 0.01em;
+    margin: 0;
+    color: #003366;
+    text-align: left;
+}
+
+.reviews-container-review-body {
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.reviews-container-review-body p {
+    font-family: 'Inter';
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 120%;
+    letter-spacing: 0.00em;
+    margin: 0;
+    color: #000000;
+    text-align: left;
+    font-style: italic;
 }
