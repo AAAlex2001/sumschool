@@ -95,5 +95,26 @@
     max-height: 640px;
     overflow-y: auto;
     border-radius: 16px 16px 0 0;
-    scrollbar-color: #003366;
+    scrollbar-width: thin;
+    scrollbar-color: #003366 #e8ebe9;
+}
+
+.reviews-container-reviews::-webkit-scrollbar {
+    width: 8px;
+}
+
+.reviews-container-reviews::-webkit-scrollbar-track {
+    background: #e8ebe9;
+    border-radius: 4px;
+}
+
+.reviews-container-reviews::-webkit-scrollbar-thumb {
+    background: #003366;
+    border-radius: 4px;
+}
+
+.reviews-container-reviews::-webkit-scrollbar-button {
+    display: none;
+    width: 0;
+    height: 0;
 }
